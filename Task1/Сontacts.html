@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="style.css"/>
+	<title>Document</title>
+</head>
+<body>
+
+	<!--(header>div.container>h1{Новоазовск}+nav#menu>ul>li*5[href])+(main.container>.block>(h2.main-title{Контактные данные}+div>p+p)+(main.container>.block>(h2.main-title+(div>p+p)+h2.main-title+div.form>form>p{Ваше имя}+input)-->
+
+	<header>
+		<div class="container">
+			<h1>Новоазовск</h1>
+			<nav class="menu">
+            <ul>
+               <li><a href="Main.html">Главная</a></li>
+               <li><a href="History.html">История</a></li>
+               <li><a href="Infrastructure.html">Инфраструктура</a></li>
+               <li><a href="Сulture.html">Культура</a></li>
+               <li><a class="menu-active-element" href="Сontacts.html">Связь</a></li>   	
+            </ul>
+         </nav>
+		</div>
+	</header>
+	<main class="container">
+		<div class="block">
+			<h2 class="main-title">Контактные данные</h2>
+			<div>
+				<p><br>Адрес: Адрес: г. Новоазовск, ул.Ленина, 6, каб. 30</p>
+				<p>Горячая линия: 071-327-44-61</p>
+				<p>Почта: novoazovsk@gmail.com</p>
+			</div>
+			<h2 class="main-title">Форма обратной связи</h2>
+			<div class="form">
+			<form name="MyForm" action="https://bloggood.ru/mail.php" method="post">
+				<p>Ваше имя*</p>
+				<input class="input" name="name" ENGINE="text"/>
+				<p>Электронная почта*</p>
+				<input class="input" name="email" type="text"/>
+				<p>Тема сообщения</p>
+				<input class="input" name="sub" type="text"/>
+				<p>Текст сообщения:<br /></textarea></p>
+				<textarea name="body" cols="1" rows="5"></textarea>
+				<input id="submit" value="Отправить" type="submit"/>
+			</form>
+			</div>
+		</div>
+	</main>
+	<footer class="container">
+		<div class="footer-author">
+			<div class="footer-block">Новоазовск <br>очень важная информация</div>
+		</div>
+	</footer>
+</body>
+</html>
